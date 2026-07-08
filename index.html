@@ -913,4 +913,57 @@ document.addEventListener("keydown",function(e){if(e.key==="Escape")MODAL.classL
 upd();var c=0,iv=setInterval(function(){upd();if(++c>40)clearInterval(iv);},250);
 })();</script>
 <!--WY-C40P5:END-->
+<!--WY-C40P6:BEGIN-->
+<style id="wy-c40p6-css">
+.c40p6-fabbox{position:fixed;right:22px;bottom:78px;z-index:121;display:none;}
+.c40p6-fabbox.show{display:block;}
+.c40p6-btn{display:inline-flex;align-items:center;gap:9px;font-family:"Noto Sans TC",sans-serif;letter-spacing:.5px;color:#f7ecd2;background:linear-gradient(135deg,#573f38,#2e2420);padding:8px 15px;border-radius:22px;border:1px solid rgba(184,134,11,.6);box-shadow:0 4px 16px rgba(0,0,0,.3);cursor:pointer;opacity:.96;transition:opacity .3s,transform .2s,box-shadow .2s;}
+.c40p6-btn:hover{opacity:1;transform:translateY(-2px);box-shadow:0 6px 22px rgba(184,134,11,.5);}
+.c40p6-ic{font-size:15px;line-height:1;color:#ecc978;}
+.c40p6-ls{display:flex;flex-direction:column;align-items:flex-start;line-height:1.22;}
+.c40p6-l1{font-size:10.5px;font-weight:500;opacity:.82;white-space:nowrap;}
+.c40p6-l2{font-size:13px;font-weight:700;color:#faf1d8;white-space:nowrap;}
+.c40p6-modal{position:fixed;inset:0;z-index:200;display:none;align-items:center;justify-content:center;background:rgba(28,20,12,.58);padding:16px;}
+.c40p6-modal.open{display:flex;}
+.c40p6-card{position:relative;background:#fbf7ee;max-width:900px;width:100%;max-height:88vh;overflow:auto;border:1px solid #d8c8ac;border-radius:14px;padding:30px 24px 22px;box-shadow:0 18px 50px rgba(0,0,0,.4);}
+.c40p6-card h3{margin:0 0 2px;font-family:"Noto Serif TC",serif;font-size:20px;color:#8b5e3c;}
+.c40p6-card .sub{margin:0 0 14px;font-family:"Noto Sans TC",sans-serif;font-size:13px;color:#6b5b4b;}
+.c40p6-close{position:absolute;top:12px;right:16px;width:34px;height:34px;border:none;border-radius:50%;background:#efe6d4;color:#8b5e3c;font-size:22px;line-height:1;cursor:pointer;z-index:2;}
+.c40p6-close:hover{background:#e3d5b8;}
+.c40p6-tbl{width:100%;border-collapse:collapse;font-family:"Noto Sans TC",sans-serif;font-size:13px;margin:.3em 0 1.2em;}
+.c40p6-tbl caption{font-family:"Noto Serif TC",serif;font-weight:700;color:#8b5e3c;font-size:14.5px;text-align:left;margin:.6em 0 .35em;line-height:1.5;}
+.c40p6-tbl th,.c40p6-tbl td{border:1px solid #d8c8ac;padding:.45em .6em;text-align:left;vertical-align:top;line-height:1.6;}
+.c40p6-tbl thead th{background:#8b5e3c;color:#f7ecd2;font-weight:700;}
+.c40p6-tbl td:first-child{white-space:nowrap;color:#8b5e3c;font-weight:700;background:#f0e8d8;}
+.c40p6-tbl tbody tr:nth-child(even) td{background:#f6efe0;}
+.c40p6-tbl b{color:#8b2500;}
+.c40p6-note{font-size:12px;color:#5a4e3a;line-height:1.9;background:#f6efe0;border-left:3px solid #c4956a;border-radius:0 6px 6px 0;padding:10px 13px;margin:4px 0 0;}
+.c40p6-note b{color:#8b2500;}
+@media(max-width:900px){.c40p6-fabbox{right:14px;}.c40p6-tbl{font-size:11.5px;}.c40p6-card{padding:26px 14px 16px;}}
+</style>
+<div class="c40p6-fabbox" id="c40p6Box"><button class="c40p6-btn" id="c40p6Btn" type="button" aria-label="開啟全景總表"><span class="c40p6-ic">▦</span><span class="c40p6-ls"><span class="c40p6-l1">本品 · 施衣因緣</span><span class="c40p6-l2">三大設問 · 三輪體空</span></span></button></div><div class="c40p6-modal" id="c40p6Modal" role="dialog" aria-modal="true" aria-label="全景總表"><div class="c40p6-card"><button class="c40p6-close" id="c40p6Close" type="button" aria-label="關閉">×</button><h3>卷四十·第六品 施衣因緣 · 全景總表</h3><p class="sub">卷四十・第六品｜三百比丘施衣發心・破戒之問四層解構・微笑之問希有事・阿難之問業緣相續・三輪體空理事無礙</p><table class="c40p6-tbl"><caption>一、敘事全景與三層解構框架（本品主骨架）</caption><thead><tr><th>環節</th><th>內容</th></tr></thead><tbody><tr><td>四階事件路徑</td><td>施衣（因）→微笑（機）→發問（緣）→授記（果），環環相扣通向究竟成佛</td></tr><tr><td>三層解構法</td><td>現象層（事相世俗倫理衝突）→心法層（動機認知轉化）→理體層（二諦圓融緣起性空）</td></tr><tr><td>三大設問總覽</td><td>破戒之問（持戒vs布施）／微笑之問（佛何以笑）／阿難之問（何以常問佛笑）</td></tr></tbody></table><table class="c40p6-tbl"><caption>二、破戒之問與微笑之問</caption><thead><tr><th>環節</th><th>內容</th></tr></thead><tbody><tr><td>破戒四層解構</td><td>事相技術解套（戒未結／有淨施衣／即時可補）→法喜超越（心大踊躍不故破戒）→二諦判準（結戒為世諦非第一義）→罪業定義學（都無貪瞋邪見不恭敬心故無破戒罪）</td></tr><tr><td>中觀濾鏡·戒律如筏</td><td>戒律是渡河工具（世諦）非終極目的，執著清淨相而礙大悲即落法愛；罪性本空，緣起無礙</td></tr><tr><td>微笑之問·排除法</td><td>窮舉七種凡夫戲論之笑（貪·瞋·慢·輕·喜·嘲·詐）皆非聖者之笑，唯留「見希有事故笑」</td></tr><tr><td>希有事</td><td>一袈裟之施，未來世中成辦佛事——凡夫視角止於物質有限，佛眼視角直透緣起全程</td></tr><tr><td>空性公式</td><td>智慧（畢竟空）×悲願（度眾生）＝無量功德；以有空義故，一切法得成</td></tr></tbody></table><table class="c40p6-tbl"><caption>三、阿難之問與三輪體空總攝</caption><thead><tr><th>環節</th><th>內容</th></tr></thead><tbody><tr><td>阿難的哲學矛盾</td><td>佛如須彌山王不以小因緣動，今有何事能令佛笑？——代眾生發問，打破偏空迷思</td></tr><tr><td>業緣相續</td><td>業因緣果報相續，不可思議——小因（一袈裟）加般若相應，必感大果（六十一劫後成佛號大相）</td></tr><tr><td>安置邏輯</td><td>捨此身當生阿閦佛世界——提供不退轉中繼站，化解對六十一劫漫長未知的恐懼</td></tr><tr><td>願力擴散效應</td><td>三百比丘施衣發心→六萬欲天子見證發心→一萬四部眾見十方佛後作願，皆號莊嚴王佛</td></tr><tr><td>三輪體空總攝</td><td>般若（空）＋尸羅（戒）＋檀（施）三者交融，不住我施、衣相、戒相，即悲智雙運之最高實踐</td></tr></tbody></table><p class="c40p6-note">本品以「破戒、微笑、阿難」三問層層化解持戒與布施的表面張力：戒是世諦權立非實，罪性本空故無破戒之過；微笑源於洞見一袈裟施轉為未來成佛的希有因果；業因緣果報相續不可思議，小因藉般若相應即成大果。終歸「<b>於畢竟空中建構如幻大業，於嚴持戒體時行無所得大悲</b>」的中道實踐。</p></div></div>
+<script id="wy-c40p6-js">(function(){
+var CH=document.querySelectorAll("section.chapter");
+var BTN=document.getElementById("c40p6Btn"),BOX=document.getElementById("c40p6Box"),MODAL=document.getElementById("c40p6Modal");
+if(!CH.length||!BTN||!BOX||!MODAL)return;
+var TARGET=5;
+function curIdx(){var lim=window.innerHeight*0.35,idx=-1;for(var i=0;i<CH.length;i++){if(CH[i].getBoundingClientRect().top<lim)idx=i;}return idx;}
+var FSEL="#wyVideo,.wy-video-fab,#vidFab,.vid-fab,#videoFab,#wyVideoBtn,#wyFab,#wy-fab,#vid-floating,#floatingYt,.video-fab,.wy-vbtn,.floating-yt",_fab,_ft=false;
+function fab(){if(_fab&&_fab.isConnected)return _fab;if(_ft)return _fab;_ft=true;_fab=document.querySelector(FSEL);return _fab;}
+function place(){
+  var base=null,eb=document.querySelector(".wy-ebox");
+  if(eb){var r=eb.getBoundingClientRect();if(r.height>4)base=Math.round(window.innerHeight-r.top)+8;}
+  if(base===null){var fEl=fab();if(fEl){var fr=fEl.getBoundingClientRect(),st=getComputedStyle(fEl);if(fr.height>0&&st.display!=="none"&&st.visibility!=="hidden")base=Math.round(window.innerHeight-fr.top)+10;}}
+  if(base===null)base=78;
+  BOX.style.bottom=base+"px";
+}
+function upd(){place();BOX.classList.toggle("show",curIdx()===TARGET);}
+var tk=false;function onS(){if(!tk){tk=true;requestAnimationFrame(function(){tk=false;upd();});}}
+window.addEventListener("scroll",onS,{passive:true});window.addEventListener("resize",onS);
+BTN.addEventListener("click",function(){MODAL.classList.add("open");});
+MODAL.addEventListener("click",function(e){if(e.target===MODAL||e.target.id==="c40p6Close")MODAL.classList.remove("open");});
+document.addEventListener("keydown",function(e){if(e.key==="Escape")MODAL.classList.remove("open");});
+upd();var c=0,iv=setInterval(function(){upd();if(++c>40)clearInterval(iv);},250);
+})();</script>
+<!--WY-C40P6:END-->
 </body></html>
