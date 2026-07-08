@@ -593,6 +593,59 @@ document.addEventListener("keydown",function(e){if(e.key==="Escape")MODAL.classL
 upd();var c=0,iv=setInterval(function(){upd();if(++c>40)clearInterval(iv);},250);
 })();</script>
 <!--WY-C40P2:END-->
+<!--WY-C40P3:BEGIN-->
+<style id="wy-c40p3-css">
+.c40p3-fabbox{position:fixed;right:22px;bottom:78px;z-index:121;display:none;}
+.c40p3-fabbox.show{display:block;}
+.c40p3-btn{display:inline-flex;align-items:center;gap:9px;font-family:"Noto Sans TC",sans-serif;letter-spacing:.5px;color:#f7ecd2;background:linear-gradient(135deg,#573f38,#2e2420);padding:8px 15px;border-radius:22px;border:1px solid rgba(184,134,11,.6);box-shadow:0 4px 16px rgba(0,0,0,.3);cursor:pointer;opacity:.96;transition:opacity .3s,transform .2s,box-shadow .2s;}
+.c40p3-btn:hover{opacity:1;transform:translateY(-2px);box-shadow:0 6px 22px rgba(184,134,11,.5);}
+.c40p3-ic{font-size:15px;line-height:1;color:#ecc978;}
+.c40p3-ls{display:flex;flex-direction:column;align-items:flex-start;line-height:1.22;}
+.c40p3-l1{font-size:10.5px;font-weight:500;opacity:.82;white-space:nowrap;}
+.c40p3-l2{font-size:13px;font-weight:700;color:#faf1d8;white-space:nowrap;}
+.c40p3-modal{position:fixed;inset:0;z-index:200;display:none;align-items:center;justify-content:center;background:rgba(28,20,12,.58);padding:16px;}
+.c40p3-modal.open{display:flex;}
+.c40p3-card{position:relative;background:#fbf7ee;max-width:900px;width:100%;max-height:88vh;overflow:auto;border:1px solid #d8c8ac;border-radius:14px;padding:30px 24px 22px;box-shadow:0 18px 50px rgba(0,0,0,.4);}
+.c40p3-card h3{margin:0 0 2px;font-family:"Noto Serif TC",serif;font-size:20px;color:#8b5e3c;}
+.c40p3-card .sub{margin:0 0 14px;font-family:"Noto Sans TC",sans-serif;font-size:13px;color:#6b5b4b;}
+.c40p3-close{position:absolute;top:12px;right:16px;width:34px;height:34px;border:none;border-radius:50%;background:#efe6d4;color:#8b5e3c;font-size:22px;line-height:1;cursor:pointer;z-index:2;}
+.c40p3-close:hover{background:#e3d5b8;}
+.c40p3-tbl{width:100%;border-collapse:collapse;font-family:"Noto Sans TC",sans-serif;font-size:13px;margin:.3em 0 1.2em;}
+.c40p3-tbl caption{font-family:"Noto Serif TC",serif;font-weight:700;color:#8b5e3c;font-size:14.5px;text-align:left;margin:.6em 0 .35em;line-height:1.5;}
+.c40p3-tbl th,.c40p3-tbl td{border:1px solid #d8c8ac;padding:.45em .6em;text-align:left;vertical-align:top;line-height:1.6;}
+.c40p3-tbl thead th{background:#8b5e3c;color:#f7ecd2;font-weight:700;}
+.c40p3-tbl td:first-child{white-space:nowrap;color:#8b5e3c;font-weight:700;background:#f0e8d8;}
+.c40p3-tbl tbody tr:nth-child(even) td{background:#f6efe0;}
+.c40p3-tbl b{color:#8b2500;}
+.c40p3-note{font-size:12px;color:#5a4e3a;line-height:1.9;background:#f6efe0;border-left:3px solid #c4956a;border-radius:0 6px 6px 0;padding:10px 13px;margin:4px 0 0;}
+.c40p3-note b{color:#8b2500;}
+@media(max-width:900px){.c40p3-fabbox{right:14px;}.c40p3-tbl{font-size:11.5px;}.c40p3-card{padding:26px 14px 16px;}}
+</style>
+<div class="c40p3-fabbox" id="c40p3Box"><button class="c40p3-btn" id="c40p3Btn" type="button" aria-label="開啟全景總表"><span class="c40p3-ic">▦</span><span class="c40p3-ls"><span class="c40p3-l1">本品 · 放光神通波羅蜜</span><span class="c40p3-l2">六神通中觀公式 · 如幻三昧</span></span></button></div><div class="c40p3-modal" id="c40p3Modal" role="dialog" aria-modal="true" aria-label="全景總表"><div class="c40p3-card"><button class="c40p3-close" id="c40p3Close" type="button" aria-label="關閉">×</button><h3>卷四十·第三品 放光神通波羅蜜 · 全景總表</h3><p class="sub">卷四十・第三品｜六神通中觀演算公式・大海寶珠・但至梵世三重密意・外道菩薩雙軌分歧・如幻三昧・生命週期</p><table class="c40p3-tbl"><caption>一、六神通與中觀公式（本品主骨架）</caption><thead><tr><th>環節</th><th>內容</th></tr></thead><tbody><tr><td>神通智證公式</td><td>現象操作＋破除我執（不可得）＋本體認知（自性空／離／無生）＋終極導向（除為薩婆若心）＝菩薩神通</td></tr><tr><td>六通列舉</td><td>如意通（動地變身履水凌虛捫日月）／天耳淨／他心智／宿命智證／天眼／漏盡通（不墮聲聞辟支佛地）</td></tr><tr><td>大海寶珠喻</td><td>世俗寶珠能除病遮鬼隨願；大乘菩薩寶能破三惡道、開三善門、生五眼、修神通波羅蜜</td></tr><tr><td>前五通共法</td><td>如其法分別，先說其相，後皆說空——先立相、後破相、終歸薩婆若心，空與相互成</td></tr></tbody></table><table class="c40p3-tbl"><caption>二、「但至梵世」密意與外道菩薩雙軌分歧</caption><thead><tr><th>環節</th><th>內容</th></tr></thead><tbody><tr><td>三層密意</td><td>借代法（梵世攝色界）＋世俗權威（順俗梵王世界主而不墮俗）＋心性場域（揀離欲清淨場而行）</td></tr><tr><td>外道陷阱一</td><td>起吾我心——「我能起此事」，滋生憍慢，強化我執之惡性循環</td></tr><tr><td>外道陷阱二</td><td>著是神通，譬如貪人著寶——法執比我執更隱微，耽溺神通本身而停滯於現象界</td></tr><tr><td>菩薩心法</td><td>知一切法自性不生，故不著神通，但念一切種智，為度眾生故——不著是空性之自然流露</td></tr><tr><td>體不同故用不同</td><td>外道與菩薩現象或同（同樣飛行變身知他心），內在運作機制與動機（體）截然不同</td></tr></tbody></table><table class="c40p3-tbl"><caption>三、中觀大相應與神通生命週期</caption><thead><tr><th>環節</th><th>內容</th></tr></thead><tbody><tr><td>悖論解鎖</td><td>以無生故，能有無量生——空非神通之障礙，正是神通得以運作的前提</td></tr><tr><td>破主客對立</td><td>三輪體空——施作主體（菩薩己身）、受用對象（大地虛空眾生）、現象（飛行）皆不可得，驕慢無立足點</td></tr><tr><td>雙諦應用</td><td>勝義諦（自性不生·不著一相）與世俗諦（借梵世名·隨順根機）自由穿梭，即是如幻三昧</td></tr><tr><td>特效導演喻</td><td>菩薩如深諳特效原理的導演，知幻是幻，且能用幻——不為炫技，只為傳遞超越現象的教育意義</td></tr><tr><td>生命週期</td><td>起（禪定力）→用（度眾生）→捨（知性空）→歸（增益菩提），四相相攝循環不息</td></tr></tbody></table><p class="c40p3-note">第三品以「以無生故，能有無量生」十字總持，解開自性空與修神通的根本悖論——空非神通的障礙，正是神通得以運作的前提。六通皆依「現相→不著→自性空→除為薩婆若心」的公式運行，外道與菩薩現象或同、體用迥異，一切終歸「<b>知幻是幻，且能用幻</b>」的如幻三昧，起用度生、不染、回向。</p></div></div>
+<script id="wy-c40p3-js">(function(){
+var CH=document.querySelectorAll("section.chapter");
+var BTN=document.getElementById("c40p3Btn"),BOX=document.getElementById("c40p3Box"),MODAL=document.getElementById("c40p3Modal");
+if(!CH.length||!BTN||!BOX||!MODAL)return;
+var TARGET=2;
+function curIdx(){var lim=window.innerHeight*0.35,idx=-1;for(var i=0;i<CH.length;i++){if(CH[i].getBoundingClientRect().top<lim)idx=i;}return idx;}
+var FSEL="#wyVideo,.wy-video-fab,#vidFab,.vid-fab,#videoFab,#wyVideoBtn,#wyFab,#wy-fab,#vid-floating,#floatingYt,.video-fab,.wy-vbtn,.floating-yt",_fab,_ft=false;
+function fab(){if(_fab&&_fab.isConnected)return _fab;if(_ft)return _fab;_ft=true;_fab=document.querySelector(FSEL);return _fab;}
+function place(){
+  var base=null,eb=document.querySelector(".wy-ebox");
+  if(eb){var r=eb.getBoundingClientRect();if(r.height>4)base=Math.round(window.innerHeight-r.top)+8;}
+  if(base===null){var fEl=fab();if(fEl){var fr=fEl.getBoundingClientRect(),st=getComputedStyle(fEl);if(fr.height>0&&st.display!=="none"&&st.visibility!=="hidden")base=Math.round(window.innerHeight-fr.top)+10;}}
+  if(base===null)base=78;
+  BOX.style.bottom=base+"px";
+}
+function upd(){place();BOX.classList.toggle("show",curIdx()===TARGET);}
+var tk=false;function onS(){if(!tk){tk=true;requestAnimationFrame(function(){tk=false;upd();});}}
+window.addEventListener("scroll",onS,{passive:true});window.addEventListener("resize",onS);
+BTN.addEventListener("click",function(){MODAL.classList.add("open");});
+MODAL.addEventListener("click",function(e){if(e.target===MODAL||e.target.id==="c40p3Close")MODAL.classList.remove("open");});
+document.addEventListener("keydown",function(e){if(e.key==="Escape")MODAL.classList.remove("open");});
+upd();var c=0,iv=setInterval(function(){upd();if(++c>40)clearInterval(iv);},250);
+})();</script>
+<!--WY-C40P3:END-->
 </body></html>');
 idoc.close();
 var sin=idoc.getElementById('q');
