@@ -860,4 +860,57 @@ document.addEventListener("keydown",function(e){if(e.key==="Escape")MODAL.classL
 upd();var c=0,iv=setInterval(function(){upd();if(++c>40)clearInterval(iv);},250);
 })();</script>
 <!--WY-C40P4:END-->
+<!--WY-C40P5:BEGIN-->
+<style id="wy-c40p5-css">
+.c40p5-fabbox{position:fixed;right:22px;bottom:78px;z-index:121;display:none;}
+.c40p5-fabbox.show{display:block;}
+.c40p5-btn{display:inline-flex;align-items:center;gap:9px;font-family:"Noto Sans TC",sans-serif;letter-spacing:.5px;color:#f7ecd2;background:linear-gradient(135deg,#573f38,#2e2420);padding:8px 15px;border-radius:22px;border:1px solid rgba(184,134,11,.6);box-shadow:0 4px 16px rgba(0,0,0,.3);cursor:pointer;opacity:.96;transition:opacity .3s,transform .2s,box-shadow .2s;}
+.c40p5-btn:hover{opacity:1;transform:translateY(-2px);box-shadow:0 6px 22px rgba(184,134,11,.5);}
+.c40p5-ic{font-size:15px;line-height:1;color:#ecc978;}
+.c40p5-ls{display:flex;flex-direction:column;align-items:flex-start;line-height:1.22;}
+.c40p5-l1{font-size:10.5px;font-weight:500;opacity:.82;white-space:nowrap;}
+.c40p5-l2{font-size:13px;font-weight:700;color:#faf1d8;white-space:nowrap;}
+.c40p5-modal{position:fixed;inset:0;z-index:200;display:none;align-items:center;justify-content:center;background:rgba(28,20,12,.58);padding:16px;}
+.c40p5-modal.open{display:flex;}
+.c40p5-card{position:relative;background:#fbf7ee;max-width:900px;width:100%;max-height:88vh;overflow:auto;border:1px solid #d8c8ac;border-radius:14px;padding:30px 24px 22px;box-shadow:0 18px 50px rgba(0,0,0,.4);}
+.c40p5-card h3{margin:0 0 2px;font-family:"Noto Serif TC",serif;font-size:20px;color:#8b5e3c;}
+.c40p5-card .sub{margin:0 0 14px;font-family:"Noto Sans TC",sans-serif;font-size:13px;color:#6b5b4b;}
+.c40p5-close{position:absolute;top:12px;right:16px;width:34px;height:34px;border:none;border-radius:50%;background:#efe6d4;color:#8b5e3c;font-size:22px;line-height:1;cursor:pointer;z-index:2;}
+.c40p5-close:hover{background:#e3d5b8;}
+.c40p5-tbl{width:100%;border-collapse:collapse;font-family:"Noto Sans TC",sans-serif;font-size:13px;margin:.3em 0 1.2em;}
+.c40p5-tbl caption{font-family:"Noto Serif TC",serif;font-weight:700;color:#8b5e3c;font-size:14.5px;text-align:left;margin:.6em 0 .35em;line-height:1.5;}
+.c40p5-tbl th,.c40p5-tbl td{border:1px solid #d8c8ac;padding:.45em .6em;text-align:left;vertical-align:top;line-height:1.6;}
+.c40p5-tbl thead th{background:#8b5e3c;color:#f7ecd2;font-weight:700;}
+.c40p5-tbl td:first-child{white-space:nowrap;color:#8b5e3c;font-weight:700;background:#f0e8d8;}
+.c40p5-tbl tbody tr:nth-child(even) td{background:#f6efe0;}
+.c40p5-tbl b{color:#8b2500;}
+.c40p5-note{font-size:12px;color:#5a4e3a;line-height:1.9;background:#f6efe0;border-left:3px solid #c4956a;border-radius:0 6px 6px 0;padding:10px 13px;margin:4px 0 0;}
+.c40p5-note b{color:#8b2500;}
+@media(max-width:900px){.c40p5-fabbox{right:14px;}.c40p5-tbl{font-size:11.5px;}.c40p5-card{padding:26px 14px 16px;}}
+</style>
+<div class="c40p5-fabbox" id="c40p5Box"><button class="c40p5-btn" id="c40p5Btn" type="button" aria-label="開啟全景總表"><span class="c40p5-ic">▦</span><span class="c40p5-ls"><span class="c40p5-l1">本品 · 等心諸法等·略說菩薩不退之相</span><span class="c40p5-l2">因行道果 · 中觀平等天平</span></span></button></div><div class="c40p5-modal" id="c40p5Modal" role="dialog" aria-modal="true" aria-label="全景總表"><div class="c40p5-card"><button class="c40p5-close" id="c40p5Close" type="button" aria-label="關閉">×</button><h3>卷四十·第五品 等心諸法等 · 全景總表</h3><p class="sub">卷四十・第五品｜三步證道・四因攝生・眾生等法等雙軌・柔心入空轉化引擎・二重果報・畢竟空故平等</p><table class="c40p5-tbl"><caption>一、三步證道與因行道果總覽（本品主骨架）</caption><thead><tr><th>環節</th><th>內容</th></tr></thead><tbody><tr><td>品末地位</td><td>佛若廣說諸菩薩相則窮劫不盡，今品末略說其相——收攝於單一核心運算機制「等心」</td></tr><tr><td>視角翻轉</td><td>非無止境累積之凡夫塔，而是等心的絕對平衡——圓滿而非攀升</td></tr><tr><td>三步因果鏈</td><td>於一切眾生中生等心→得一切諸法等→立一切眾生於諸法等中，自證轉為化他</td></tr><tr><td>因行道果</td><td>因（四大基石）／行（眾生等法等雙軌）／道（功德→柔心→禪定→無相）／果（今世護念·後世無惡色）</td></tr></tbody></table><table class="c40p5-tbl"><caption>二、四因攝生與雙軌平等之行</caption><thead><tr><th>環節</th><th>內容</th></tr></thead><tbody><tr><td>四大基石</td><td>大慈悲（情感種子）＋初發度一切眾生心（願力廣度）＋學諸佛等心觀眾生（修道熏習）＋一切法自性空（般若校準器）</td></tr><tr><td>眾生等·情感面</td><td>慈愍四生眾生，一心欲利益——從生命形態的廣度立等</td></tr><tr><td>眾生等·觀察面</td><td>念五道眾生皆沒無常老病死——從命運的同質性立等</td></tr><tr><td>法等·智慧面</td><td>觀四念處亦不見身——所觀之境無自性</td></tr><tr><td>法等·工具面</td><td>行五根五神通一心欲度眾生而不執——能行之工具無自性</td></tr><tr><td>三重抉擇</td><td>情×相（初門）→觀×行（中門）→定×空（高門），由淺入深層層遞進</td></tr></tbody></table><table class="c40p5-tbl"><caption>三、柔心入空轉化引擎與中觀平等天平</caption><thead><tr><th>環節</th><th>內容</th></tr></thead><tbody><tr><td>心理轉化公式</td><td>功德無量→心柔軟→疾得禪定→心如意調柔→破長短男女白黑二元→入一相法所謂無相</td></tr><tr><td>柔軟即強大</td><td>剛強之心摩擦對立無法安住，柔軟之心無摩擦而能迅速安住禪定——世俗以為剛強是力量，恰恰相反</td></tr><tr><td>今世果報</td><td>為十方諸佛所念——頻率共振（同頻則共振），非諸佛特別偏愛之愛著虛妄</td></tr><tr><td>後世果報</td><td>眼終不見不愛色——本體論之重塑（換一套看世界的本體論），非換了個好地方住</td></tr><tr><td>畢竟空故平等</td><td>若諸法實有則等心成幻覺；無我故等（眾生等）／戲論破故等（法等）／無著故真（佛實念）</td></tr><tr><td>天平模型</td><td>眾生等與法等兩端等重，性空為支點，福德為潤滑，諸佛實念為光芒——終極方程式：發心→柔心入空→實相平等</td></tr></tbody></table><p class="c40p5-note">第五品把無量菩薩相收攝於「等心」一機制：於眾生中生等心，得諸法等，立眾生於諸法等中。其因行道果的因果工程，最終指向同一底層邏輯——<b>畢竟空故平等</b>；空不是等心的障礙，而是等心唯一的所以然，成就「發心→柔心入空→實相平等」的終極菩薩方程式，全部收於「不減於阿耨多羅三藐三菩提」一句不退轉。</p></div></div>
+<script id="wy-c40p5-js">(function(){
+var CH=document.querySelectorAll("section.chapter");
+var BTN=document.getElementById("c40p5Btn"),BOX=document.getElementById("c40p5Box"),MODAL=document.getElementById("c40p5Modal");
+if(!CH.length||!BTN||!BOX||!MODAL)return;
+var TARGET=4;
+function curIdx(){var lim=window.innerHeight*0.35,idx=-1;for(var i=0;i<CH.length;i++){if(CH[i].getBoundingClientRect().top<lim)idx=i;}return idx;}
+var FSEL="#wyVideo,.wy-video-fab,#vidFab,.vid-fab,#videoFab,#wyVideoBtn,#wyFab,#wy-fab,#vid-floating,#floatingYt,.video-fab,.wy-vbtn,.floating-yt",_fab,_ft=false;
+function fab(){if(_fab&&_fab.isConnected)return _fab;if(_ft)return _fab;_ft=true;_fab=document.querySelector(FSEL);return _fab;}
+function place(){
+  var base=null,eb=document.querySelector(".wy-ebox");
+  if(eb){var r=eb.getBoundingClientRect();if(r.height>4)base=Math.round(window.innerHeight-r.top)+8;}
+  if(base===null){var fEl=fab();if(fEl){var fr=fEl.getBoundingClientRect(),st=getComputedStyle(fEl);if(fr.height>0&&st.display!=="none"&&st.visibility!=="hidden")base=Math.round(window.innerHeight-fr.top)+10;}}
+  if(base===null)base=78;
+  BOX.style.bottom=base+"px";
+}
+function upd(){place();BOX.classList.toggle("show",curIdx()===TARGET);}
+var tk=false;function onS(){if(!tk){tk=true;requestAnimationFrame(function(){tk=false;upd();});}}
+window.addEventListener("scroll",onS,{passive:true});window.addEventListener("resize",onS);
+BTN.addEventListener("click",function(){MODAL.classList.add("open");});
+MODAL.addEventListener("click",function(e){if(e.target===MODAL||e.target.id==="c40p5Close")MODAL.classList.remove("open");});
+document.addEventListener("keydown",function(e){if(e.key==="Escape")MODAL.classList.remove("open");});
+upd();var c=0,iv=setInterval(function(){upd();if(++c>40)clearInterval(iv);},250);
+})();</script>
+<!--WY-C40P5:END-->
 </body></html>
