@@ -1664,4 +1664,62 @@ document.addEventListener("keydown",function(e){if(e.key==="Escape")MODAL.classL
 upd();var c=0,iv=setInterval(function(){upd();if(++c>40)clearInterval(iv);},250);
 })();</script>
 <!--WY-BH40P7:END-->
+<!--WY-BH40P8:BEGIN-->
+<style id="wy-bh40p8-css">
+.bh40p8-fabbox{position:fixed;right:22px;bottom:150px;z-index:123;display:none;}
+.bh40p8-fabbox.show{display:block;}
+.bh40p8-btn{display:inline-flex;align-items:center;gap:9px;font-family:"Noto Sans TC",sans-serif;letter-spacing:.5px;color:#f7ecd2;background:linear-gradient(135deg,#4a5a68,#232d36);padding:8px 15px;border-radius:22px;border:1px solid rgba(150,180,205,.55);box-shadow:0 4px 16px rgba(0,0,0,.32);cursor:pointer;opacity:.96;transition:opacity .3s,transform .2s,box-shadow .2s;}
+.bh40p8-btn:hover{opacity:1;transform:translateY(-2px);box-shadow:0 6px 22px rgba(120,160,200,.5);}
+.bh40p8-ic{font-size:15px;line-height:1;color:#bcd4ea;}
+.bh40p8-ls{display:flex;flex-direction:column;align-items:flex-start;line-height:1.22;}
+.bh40p8-l1{font-size:10.5px;font-weight:500;opacity:.82;white-space:nowrap;}
+.bh40p8-l2{font-size:13px;font-weight:700;color:#eef4fa;white-space:nowrap;}
+.bh40p8-modal{position:fixed;inset:0;z-index:200;display:none;align-items:center;justify-content:center;background:rgba(22,26,30,.6);padding:16px;}
+.bh40p8-modal.open{display:flex;}
+.bh40p8-card{position:relative;background:#fbf7ee;max-width:1080px;width:100%;max-height:90vh;overflow:auto;border:1px solid #d3cdbf;border-radius:14px;padding:28px 22px 20px;box-shadow:0 18px 50px rgba(0,0,0,.4);}
+.bh40p8-card h3{margin:0 0 2px;font-family:"Noto Serif TC",serif;font-size:20px;color:#3f5160;}
+.bh40p8-card .sub{margin:0 0 12px;font-family:"Noto Sans TC",sans-serif;font-size:12.5px;color:#5b6b78;}
+.bh40p8-close{position:absolute;top:12px;right:16px;width:34px;height:34px;border:none;border-radius:50%;background:#eceef0;color:#3f5160;font-size:22px;line-height:1;cursor:pointer;z-index:2;}
+.bh40p8-close:hover{background:#dde2e6;}
+.bh40p8-tbl{width:100%;border-collapse:collapse;font-size:12.8px;margin:.2em 0 1em;}
+.bh40p8-tbl caption{font-family:"Noto Serif TC",serif;font-weight:700;color:#3f5160;font-size:14px;text-align:left;margin:.4em 0 .5em;}
+.bh40p8-tbl th,.bh40p8-tbl td{border:1px solid #d8d2c4;padding:.5em .65em;text-align:left;vertical-align:top;line-height:1.72;}
+.bh40p8-tbl thead th{background:#3f5160;color:#eef4fa;font-weight:700;position:sticky;top:0;}
+.bh40p8-tbl thead th:nth-child(1){width:32%;}.bh40p8-tbl thead th:nth-child(2){width:41%;}.bh40p8-tbl thead th:nth-child(3){width:27%;}
+.bh40p8-src{font-family:"Noto Serif TC",serif;color:#5a4636;background:#f6efe0;letter-spacing:.3px;}
+.bh40p8-guan{background:#eef2f5;color:#37505f;}
+.bh40p8-tbl tbody tr:nth-child(even) td{background:#faf6ee;}
+.bh40p8-tbl tbody tr:nth-child(even) td.bh40p8-guan{background:#e8eef2;}
+.bh40p8-tbl tr.bh40p8-qa td{background:#ece0c8 !important;}
+.bh40p8-tbl tr.bh40p8-qa td.bh40p8-guan{background:#d8e2e8 !important;}
+.bh40p8-tbl b{color:#8b2500;}
+.bh40p8-guan b{color:#2f6b5a;}
+.bh40p8-note{font-size:12px;color:#4a5560;line-height:1.95;background:#eef2f5;border-left:3px solid #7f9cb5;border-radius:0 6px 6px 0;padding:11px 14px;margin:2px 0 0;}
+.bh40p8-note b{color:#8b2500;}
+@media(max-width:900px){.bh40p8-fabbox{right:14px;}.bh40p8-tbl{font-size:11px;}.bh40p8-card{padding:22px 12px 14px;}}
+</style>
+<div class="bh40p8-fabbox" id="bh40p8Box"><button class="bh40p8-btn" id="bh40p8Btn" type="button" aria-label="開啟白話翻譯表"><span class="bh40p8-ic">譯</span><span class="bh40p8-ls"><span class="bh40p8-l1">本品 · 原文·白話·中觀</span><span class="bh40p8-l2">白話翻譯表</span></span></button></div><div class="bh40p8-modal" id="bh40p8Modal" role="dialog" aria-modal="true"><div class="bh40p8-card"><button class="bh40p8-close" id="bh40p8Close" type="button" aria-label="關閉">×</button><h3>卷四十 · 第8品 白話翻譯表（釋舌相品）</h3><p class="sub">《大智度論》卷四十 · 第8品 · 釋舌相品 · 原文↔白話↔中觀概念 逐段對照</p><table class="bh40p8-tbl"><caption>釋舌相品·原文｜白話翻譯｜中觀概念（共14段）</caption><thead><tr><th>原文</th><th>白話翻譯</th><th>中觀概念</th></tr></thead><tbody><tr><td class="bh40p8-src">爾時，世尊出舌相，遍覆三千大千世界；從其舌相出無數無量色光明，普照十方如恒河沙等諸佛世界。是時，東方如恒河沙等世界中無量無數諸菩薩見是大光明，各各白其佛言：「世尊！是誰神力故，有是大光明，普照諸佛世界？」</td><td>這時，世尊示現廣長舌相，遍覆三千大千世界；從這舌相之中，放出無數無量、種種色彩的光明，普遍照耀十方如恆河沙數那樣多的諸佛世界。這時，東方如恆河沙數那樣多的世界之中，無量無數的菩薩見到這廣大的光明，各自對他們所在世界的佛稟白說：「世尊！這是憑藉誰的神通威力，才有這樣廣大的光明，普照諸佛世界呢？」</td><td class="bh40p8-guan"><b>舌相重出·三千大千世界的有相神變</b>——本品開篇即是佛陀第二次示現廣長舌相，光明遍照十方恆沙世界，這一極致壯麗的「有相」神變，正是全品「以最壯麗的有，顯最徹底的空」中觀敘事的起點；他方世界菩薩見光生疑而問，開啟下文層層溯源的因緣鏈。</td></tr><tr><td class="bh40p8-src">諸佛告諸菩薩言：「諸善男子！西方有世界名娑婆，是中有佛名釋迦牟尼，是其舌相出大光明，普照東方如恒河沙等諸佛世界；南西北方、四維、上下，亦復如是；為諸菩薩摩訶薩說般若波羅蜜故。」</td><td>諸佛告訴這些菩薩說：「諸位善男子！在西方有一個世界名叫娑婆，那裡有一尊佛名叫釋迦牟尼，正是他的舌相放出這廣大光明，普照東方如恆河沙數那樣多的諸佛世界；南方、西方、北方，以及四維上下，也都是同樣的情形；這是為了向諸菩薩摩訶薩宣說般若波羅蜜的緣故。」</td><td class="bh40p8-guan"><b>異方諸佛答疑·舌相溯源</b>——他方諸佛明確指出光明的來源：正是娑婆世界釋迦牟尼佛的舌相，為向十方菩薩宣說般若波羅蜜而放光遍照六方；此段以「異方問答」的敘事結構，將舌相神變與般若說法的因緣明確扣合，鋪墊下文十方菩薩雲集聽法的場景。</td></tr><tr><td class="bh40p8-src">是時，諸菩薩各白其佛言：「我欲往供養釋迦牟尼佛及諸菩薩摩訶薩，并欲聽般若波羅蜜！」諸佛告諸菩薩：「善男子！汝自知時！」</td><td>這時，這些菩薩各自對他們的佛稟白說：「我想要前往供養釋迦牟尼佛以及諸位菩薩摩訶薩，並且想要聽聞般若波羅蜜！」諸佛告訴這些菩薩說：「善男子！你們自己斟酌適當的時機吧！」</td><td class="bh40p8-guan"><b>菩薩發心往詣·自知時義</b>——十方菩薩聞法生信，主動發願前往娑婆世界供養釋尊、聽聞般若，諸佛以「汝自知時」印可其行，顯示聞法供養之心是菩薩自發、無有勉強的道業因緣，亦為下文十方菩薩雲集、共成華臺供養的莊嚴法會鋪墊。</td></tr><tr><td class="bh40p8-src">是時，諸菩薩摩訶薩持諸供養具、無量華蓋、幢幡、瓔珞、眾香、金銀、寶花，向娑婆世界，詣釋迦牟尼佛所。爾時，四天王諸天乃至阿迦尼吒諸天，各持天上天香、末香、澤香、天樹香、葉香、天種種蓮華——青、赤、紅、白，向釋迦牟尼佛所。是諸菩薩摩訶薩及諸天所散諸華，於三千大千世界虛空中化成四柱大寶臺，種種異色，莊嚴分明。</td><td>這時，這些菩薩摩訶薩帶著種種供養器具、無量的花蓋、幢幡、瓔珞、各種香、金銀、寶花，前往娑婆世界，來到釋迦牟尼佛的座前。這時，四天王天乃至阿迦尼吒天（色究竟天）的諸天，也各自帶著天上的天香、末香、澤香、天樹香、葉香，以及天上種種蓮花——青色、赤色、紅色、白色，前往釋迦牟尼佛的座前。這些菩薩摩訶薩以及諸天所散布的種種花朵，在三千大千世界的虛空之中，化成了四根柱子撐起的巨大寶臺，種種顏色各異，莊嚴分明。</td><td class="bh40p8-guan"><b>十方雲集供養·華臺莊嚴顯現</b>——十方菩薩與諸天攜帶供養具、香花齊聚娑婆世界，所散諸華於虛空中化為四柱大寶臺，莊嚴分明，此一盛大莊嚴之相，正是「以有顯無」中觀敘事手法的極致展現——以世俗諦上最壯麗恢弘的莊嚴相，為下文即將宣說的第一義諦空性般若作前導鋪墊。</td></tr><tr><td class="bh40p8-src">是時，釋迦牟尼佛眾中，有十萬億人皆從坐起，合掌白佛言：「世尊！我等於未來世中，亦當得如是法，如今釋迦牟尼佛！弟子、侍從、大眾，說法，亦爾！」</td><td>這時，釋迦牟尼佛法會大眾之中，有十萬億人都從座位上起身，合掌對佛稟白說：「世尊！我們在未來世中，也應當證得像這樣的法，如同現在的釋迦牟尼佛一樣！弟子、侍從、大眾，以及說法的種種情景，也都同樣如此！」</td><td class="bh40p8-guan"><b>十萬億人發願·願如今佛</b>——見此莊嚴法會盛況，釋尊座下十萬億人當下發願未來成佛、亦如今日釋迦牟尼佛具足弟子眷屬、演說正法，此一發願正是下文佛陀微笑授記「六十八億劫後成佛，號皆覺花」的直接因緣。</td></tr><tr><td class="bh40p8-src">是時，佛知善男子至心，於一切諸法不生不滅、不出不作，得是法忍。佛便微笑，種種色光從口中出。阿難白佛言：「世尊！何因緣故微笑？」</td><td>這時，佛陀了知這些善男子發願的至誠之心，對於一切諸法不生不滅、不出不作的道理，已經證得這樣的法忍（無生法忍）。佛陀於是微笑，種種色彩的光明從口中放射出來。阿難對佛稟白說：「世尊！您是因為什麼緣故而微笑呢？」</td><td class="bh40p8-guan"><b>證無生法忍·佛微笑授記之前奏</b>——佛陀鑑知十萬億人發願之至心，已於一切法不生不滅、不出不作的空性中證得無生法忍，隨即微笑放光；阿難照例發問笑因，此一「證忍—微笑—發問」的模式，與卷四十品6施衣因緣品中「發心—微笑—發問—授記」的敘事路徑遙相呼應，同屬全論常見的授記敘事範式。</td></tr><tr><td class="bh40p8-src">佛告阿難：「是眾中十萬億人，於諸法中得無生忍。是諸人於未來世過六十八億劫當得作佛，劫名華積，佛皆號覺花。」</td><td>佛告訴阿難說：「這法會大眾之中的十萬億人，已經在諸法之中證得了無生法忍。這些人在未來世，經過六十八億劫之後，都將證得成佛，那時的劫名叫做華積，佛號都稱為覺花。」</td><td class="bh40p8-guan"><b>佛授記覺花·花開見佛因果不爽</b>——佛陀為十萬億人授記：六十八億劫後同時成佛，劫名「華積」（七寶華聚積成臺）、佛號皆為「覺花」，此一因（散華供養、華臺莊嚴）果（覺花佛號、華積劫名）緊密呼應的授記，正是「依因立名、花開見佛」的精密緣起編碼，說明空性不廢因果，畢竟空與業果宛然不失可以並存不悖。</td></tr><tr class="bh40p8-qa"><td class="bh40p8-src">問曰：初品中佛已出舌相，今何以重出？</td><td>問道：在本論最初的品次之中，佛陀已經示現過廣長舌相，現在為什麼又要重複示現呢？</td><td class="bh40p8-guan"><b>懸念一·舌相重出之謎</b>——此問質疑本品開篇的舌相神變是否與初品重複、有敘事上的冗餘之嫌，開啟下文以「非一日一坐說」破除「同一場法會」錯覺的解答，是全品「兩大懸念」中的第一問。</td></tr><tr class="bh40p8-qa"><td class="bh40p8-src">答曰：是事非一日一坐說。前出舌相，為和合大會，度一切眾生，舍利弗問，佛答。今此異時，更為餘人；須菩提巧說空故，佛命令更說，是故出舌相光明。</td><td>答道：這件事並不是同一天、同一場法會之中所宣說的。先前示現舌相，是為了和合大眾法會、度化一切眾生，是由舍利弗發問、佛陀作答。現在這一次，是在不同的時間，為了另外的聽眾；因為須菩提善巧宣說空義的緣故，佛陀命他重新宣說，因此才又示現舌相光明。</td><td class="bh40p8-guan"><b>異時異對象·重複即是緣起無自性之證</b>——論主破除「同一場法會重複」的錯覺，指出前後兩次舌相神變異時、異對象、異因緣（前為舍利弗問佛答、和合大會度眾生；今為須菩提巧說空、佛命重說），如同治病應病與藥、藥引須因緣重啟才能增強法效——舌相之「重出」正是緣起法無自性、須隨因緣而重新生起的具體例證，並非敘事上的冗餘。</td></tr><tr class="bh40p8-qa"><td class="bh40p8-src">問曰：舍利弗智慧第一，竟何所少，而復命須菩提？</td><td>問道：舍利弗是佛陀弟子中智慧第一的人，究竟還缺少什麼，佛陀竟然又要命須菩提來說法呢？</td><td class="bh40p8-guan"><b>懸念二·般若選角之謎第一問</b>——般若經以「智慧」為經名，舍利弗既是智慧第一的代表，何以佛陀不直接命舍利弗宣說，反而另外指定須菩提？此問開啟下文「群臣次第共語」與「二因緣」的雙重解答，是全品第二重懸念的起點。</td></tr><tr class="bh40p8-qa"><td class="bh40p8-src">答曰：佛弟子眾多，一人說已，次命一人；譬如王者，群臣眾多，次第共語。</td><td>答道：佛陀的弟子眾多，並不是只有一人能說法；一人說完之後，接著又命另一人來說；就好比君王一樣，臣子眾多，會依次序輪流與臣子們談話議事。</td><td class="bh40p8-guan"><b>行政倫理·王者群臣次第共語之喻</b>——論主先以「僧團倫理與秩序」的角度作答：佛如法王，弟子如群臣，法音的宣說本應由眾弟子次第輪流承擔，並非舍利弗一人獨攬；此喻說明般若選角並非否定舍利弗的智慧，而是彰顯法會運作「次第共語」的行政倫理，為下文更深一層的「二因緣」解答鋪墊。</td></tr><tr class="bh40p8-qa"><td class="bh40p8-src">答曰：此經名智慧，舍利弗智慧第一，是故問。須菩提雖有種種因緣，以二因緣大故：一者、好行無諍定，常慈悲眾生，雖不能廣度眾生，而常助菩薩，以菩薩事問佛；二者、好深行空法，是般若中多說空法——是故命須菩提說。</td><td>答道：這部經名為「智慧」，舍利弗是智慧第一，所以（大眾）才會這樣發問。須菩提雖然還有種種其他因緣，但主要是以兩個重大因緣的緣故：第一，須菩提喜好修行無諍三昧，常懷慈悲心對待眾生，雖然不能像舍利弗那樣廣泛度化眾生，卻常常輔助菩薩，以菩薩相關的事情請問佛陀；第二，須菩提喜好深入修行空法，而這般若經之中又多半宣說空法——因為這兩個緣故，佛陀才命須菩提來宣說。</td><td class="bh40p8-guan"><b>須菩提雙重資格·無諍慈悲與深行空法</b>——論主給出更深一層的正面解答：須菩提之所以被選定宣說般若，並非因為他智慧勝過舍利弗，而是他兼具「好行無諍定、常慈悲眾生」（柔和心境，善於輔助菩薩問法）與「好深行空法」（與般若宗旨最為契合）兩項獨特資格；可見「第一」並非唯一標準，法會選角乃是觀待因緣、依用立名，而非優劣實有的絕對排序。</td></tr><tr class="bh40p8-qa"><td class="bh40p8-src">問曰：若爾者，目連、迦葉等甚多，何以不次第皆與語？</td><td>問道：如果是這樣的話，目犍連、迦葉等人也還有很多，為什麼不依照次序都與他們談論呢？</td><td class="bh40p8-guan"><b>懸念二·般若選角之謎第二問（排除法）</b>——此問進一步追問：既然主張「次第共語」，何以不將神通第一的目犍連、頭陀第一的迦葉等大弟子也一併納入輪流之列？此問以排除法逼近「名實相符」的最終答案，是全品三大問答的收束之問。</td></tr><tr class="bh40p8-qa"><td class="bh40p8-src">答曰：此經名智慧，舍利弗智慧第一，是故問。須菩提……好深行空法，是般若中多說空法——是故命須菩提說。是「舌相光明」、「諸菩薩來往」義，乃至「華臺供養」義，如先說。</td><td>答道：這部經名為「智慧」，舍利弗是智慧第一，所以大眾才先問舍利弗；……須菩提又喜好深入修行空法，而這般若經之中多半宣說空法的緣故，因此佛陀才命須菩提來宣說。至於「舌相光明」的意義、「諸菩薩往來供養」的意義，乃至「華臺供養」的意義，就如同前面已經說過的一樣。</td><td class="bh40p8-guan"><b>名實相符·排除法與主軸鎖定總結</b>——論主以「名實相符」總收全品三大問答：目犍連、摩訶迦葉雖各有神通、頭陀之勝，卻與本經「智慧／般若」之名主軸無涉，故不在輪流宣說之列；排除並非貶抑，而是聚焦——法會之名既叫「般若」，主軸便鎖定於智慧與空性，須菩提的雙重資格恰是這主軸唯一契合的空瓶，能承載般若之水而不溢；至此舌相重出、般若選角、神變授記三大問答層層收攝，終歸「諸法畢竟空，因果如幻有」的中觀統一。</td></tr></tbody></table><p class="bh40p8-note">本表為卷四十第8品「釋舌相品」原典部分的原文·白話·中觀三欄對照：佛陀重現廣長舌相遍照十方，十方菩薩雲集娑婆世界供養聽法，十萬億人證無生法忍蒙佛授記（劫名華積、佛號覺花）；論主以三大問答層層解謎：舌相何以重出（異時異對象·緣起無自性）、般若何以捨舍利弗命須菩提（王者群臣次第共語·須菩提雙重資格）、目連迦葉等何以不與（名實相符·排除法主軸鎖定），終歸「諸法畢竟空，因果如幻有」的中觀統一。原文取自 dazhidulun-40 站內 L1 加密原典第8品（依實際位移順序收錄，經在最頂、問在答前、有問必有答，共14段，已去除重複段落）。白話忠於原意、不增不減；中觀欄標出各段所涉的中觀義理。</p></div></div>
+<script id="wy-bh40p8-js">(function(){
+var CH=document.querySelectorAll("section.chapter");
+var BTN=document.getElementById("bh40p8Btn"),BOX=document.getElementById("bh40p8Box"),MODAL=document.getElementById("bh40p8Modal");
+if(!CH.length||!BTN||!BOX||!MODAL)return;
+var TARGET=7;
+var CBOX=document.getElementById("c40p8Box");
+function place(){
+  var b=null;
+  if(CBOX){var st=getComputedStyle(CBOX);var r=CBOX.getBoundingClientRect();if(st.position==="fixed"&&r.height>0&&st.display!=="none")b=Math.round(window.innerHeight-r.top)+8;}
+  if(b===null){var eb=document.querySelector(".wy-ebox");if(eb){var er=eb.getBoundingClientRect();if(er.height>4)b=Math.round(window.innerHeight-er.top)+8;}}
+  if(b===null)b=150;
+  BOX.style.bottom=b+"px"; /*BHPLACE*/
+}
+function curIdx(){var lim=window.innerHeight*0.35,idx=-1;for(var i=0;i<CH.length;i++){if(CH[i].getBoundingClientRect().top<lim)idx=i;}return idx;}
+function upd(){place();BOX.classList.toggle("show",curIdx()===TARGET);}
+var tk=false;function onS(){if(!tk){tk=true;requestAnimationFrame(function(){tk=false;upd();});}}
+window.addEventListener("scroll",onS,{passive:true});window.addEventListener("resize",onS);
+BTN.addEventListener("click",function(){MODAL.classList.add("open");});
+MODAL.addEventListener("click",function(e){if(e.target===MODAL||e.target.id==="bh40p8Close")MODAL.classList.remove("open");});
+document.addEventListener("keydown",function(e){if(e.key==="Escape")MODAL.classList.remove("open");});
+upd();var c=0,iv=setInterval(function(){upd();if(++c>40)clearInterval(iv);},250);
+})();</script>
+<!--WY-BH40P8:END-->
 </body></html>
