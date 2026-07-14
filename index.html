@@ -1376,4 +1376,60 @@ document.addEventListener("keydown",function(e){if(e.key==="Escape")MODAL.classL
 upd();var c=0,iv=setInterval(function(){upd();if(++c>40)clearInterval(iv);},250);
 })();</script>
 <!--WY-BH40P2:END-->
+<!--WY-BH40P3:BEGIN-->
+<style id="wy-bh40p3-css">
+.bh40p3-fabbox{position:fixed;right:22px;bottom:150px;z-index:123;display:none;}
+.bh40p3-fabbox.show{display:block;}
+.bh40p3-btn{display:inline-flex;align-items:center;gap:9px;font-family:"Noto Sans TC",sans-serif;letter-spacing:.5px;color:#f7ecd2;background:linear-gradient(135deg,#4a5a68,#232d36);padding:8px 15px;border-radius:22px;border:1px solid rgba(150,180,205,.55);box-shadow:0 4px 16px rgba(0,0,0,.32);cursor:pointer;opacity:.96;transition:opacity .3s,transform .2s,box-shadow .2s;}
+.bh40p3-btn:hover{opacity:1;transform:translateY(-2px);box-shadow:0 6px 22px rgba(120,160,200,.5);}
+.bh40p3-ic{font-size:15px;line-height:1;color:#bcd4ea;}
+.bh40p3-ls{display:flex;flex-direction:column;align-items:flex-start;line-height:1.22;}
+.bh40p3-l1{font-size:10.5px;font-weight:500;opacity:.82;white-space:nowrap;}
+.bh40p3-l2{font-size:13px;font-weight:700;color:#eef4fa;white-space:nowrap;}
+.bh40p3-modal{position:fixed;inset:0;z-index:200;display:none;align-items:center;justify-content:center;background:rgba(22,26,30,.6);padding:16px;}
+.bh40p3-modal.open{display:flex;}
+.bh40p3-card{position:relative;background:#fbf7ee;max-width:1080px;width:100%;max-height:90vh;overflow:auto;border:1px solid #d3cdbf;border-radius:14px;padding:28px 22px 20px;box-shadow:0 18px 50px rgba(0,0,0,.4);}
+.bh40p3-card h3{margin:0 0 2px;font-family:"Noto Serif TC",serif;font-size:20px;color:#3f5160;}
+.bh40p3-card .sub{margin:0 0 12px;font-family:"Noto Sans TC",sans-serif;font-size:12.5px;color:#5b6b78;}
+.bh40p3-close{position:absolute;top:12px;right:16px;width:34px;height:34px;border:none;border-radius:50%;background:#eceef0;color:#3f5160;font-size:22px;line-height:1;cursor:pointer;z-index:2;}
+.bh40p3-close:hover{background:#dde2e6;}
+.bh40p3-tbl{width:100%;border-collapse:collapse;font-size:12.8px;margin:.2em 0 1em;}
+.bh40p3-tbl caption{font-family:"Noto Serif TC",serif;font-weight:700;color:#3f5160;font-size:14px;text-align:left;margin:.4em 0 .5em;}
+.bh40p3-tbl th,.bh40p3-tbl td{border:1px solid #d8d2c4;padding:.5em .65em;text-align:left;vertical-align:top;line-height:1.72;}
+.bh40p3-tbl thead th{background:#3f5160;color:#eef4fa;font-weight:700;position:sticky;top:0;}
+.bh40p3-tbl thead th:nth-child(1){width:32%;}.bh40p3-tbl thead th:nth-child(2){width:41%;}.bh40p3-tbl thead th:nth-child(3){width:27%;}
+.bh40p3-src{font-family:"Noto Serif TC",serif;color:#5a4636;background:#f6efe0;letter-spacing:.3px;}
+.bh40p3-guan{background:#eef2f5;color:#37505f;}
+.bh40p3-tbl tbody tr:nth-child(even) td{background:#faf6ee;}
+.bh40p3-tbl tbody tr:nth-child(even) td.bh40p3-guan{background:#e8eef2;}
+.bh40p3-tbl b{color:#8b2500;}
+.bh40p3-guan b{color:#2f6b5a;}
+.bh40p3-note{font-size:12px;color:#4a5560;line-height:1.95;background:#eef2f5;border-left:3px solid #7f9cb5;border-radius:0 6px 6px 0;padding:11px 14px;margin:2px 0 0;}
+.bh40p3-note b{color:#8b2500;}
+@media(max-width:900px){.bh40p3-fabbox{right:14px;}.bh40p3-tbl{font-size:11px;}.bh40p3-card{padding:22px 12px 14px;}}
+</style>
+<div class="bh40p3-fabbox" id="bh40p3Box"><button class="bh40p3-btn" id="bh40p3Btn" type="button" aria-label="開啟白話翻譯表"><span class="bh40p3-ic">譯</span><span class="bh40p3-ls"><span class="bh40p3-l1">本品 · 原文·白話·中觀</span><span class="bh40p3-l2">白話翻譯表</span></span></button></div><div class="bh40p3-modal" id="bh40p3Modal" role="dialog" aria-modal="true"><div class="bh40p3-card"><button class="bh40p3-close" id="bh40p3Close" type="button" aria-label="關閉">×</button><h3>卷四十 · 第3品 白話翻譯表（放光神通波羅蜜）</h3><p class="sub">《大智度論》卷四十 · 第3品 · 放光神通波羅蜜 · 原文↔白話↔中觀概念 逐段對照</p><table class="bh40p3-tbl"><caption>放光神通波羅蜜·原文｜白話翻譯｜中觀概念（共10段）</caption><thead><tr><th>原文</th><th>白話翻譯</th><th>中觀概念</th></tr></thead><tbody><tr><td class="bh40p3-src">舍利弗！有菩薩摩訶薩行般若波羅蜜時，修神通波羅蜜。以是神通波羅蜜，受種種如意事：能動大地；變一身為無數身，無數身還為一身；隱顯自在；山壁樹木，皆過無礙，如行空中；履水如地；凌虛如鳥；出沒地中，如出入水；身出煙炎，如大火聚；身中出水，如雪山水流；日月大德，威力難當，而能摩捫；乃至梵天，身得自在。亦不著是如意神通，神通事及己身皆不可得；自性空故、自性離故、自性無生故。不作是念：「我得如意神通。」除為薩婆若心。如是，舍利弗！菩薩摩訶薩行般若波羅蜜時，得如意神通智證。</td><td>舍利弗！有菩薩摩訶薩修行般若波羅蜜的時候，同時修習神通波羅蜜。憑藉這神通波羅蜜，能夠獲得種種隨心所欲的事：能夠震動大地；能將一個身形化為無數個身形，無數個身形又還原為一個身形；能夠隨意隱身、現身；穿越山壁樹木都毫無障礙，就像行走在虛空之中一樣；能夠腳踏水面如履平地；能夠凌空飛翔如同飛鳥；能夠出入地中，如同出入水中一樣；身體能夠冒出煙焰，猶如熊熊大火聚；身體之中能夠流出水來，猶如雪山流水一般；連日月這樣威德廣大、威力難擋的天體，都能夠用手撫摩；甚至能夠一直到梵天，身形都能得到自在。但菩薩並不執著這種如意神通，因為無論是神通這件事、還是自己的身形，都是不可得的；因為自性本空、自性遠離、自性無生的緣故。菩薩不會生起這樣的念頭：「我證得了如意神通。」唯一的例外是為了成就一切智智（薩婆若）之心而作此念想。就是這樣，舍利弗！菩薩摩訶薩修行般若波羅蜜的時候，證得如意神通的智慧證量。</td><td class="bh40p3-guan"><b>神足通·自性空不礙妙用</b>——經文詳列如意神通的種種妙用（動地、分身、履水、凌虛、身出煙水、捫日月），卻在句末急轉直下：「亦不著是如意神通……自性空故、自性離故、自性無生故」，正是全品「以無生故，能有無量生」核心命題的第一次展開——神通妙用與畢竟空性並非對立，而是空性本身容許無礙妙用的展現，唯一容許執取的念頭是「為薩婆若心」，即一切為成就佛智而發，非為己身炫耀神通。</td></tr><tr><td class="bh40p3-src">是菩薩以天耳淨，過於人耳，聞二種聲：天聲、人聲。亦不著是天耳神通，天耳與聲及己身皆不可得，自性空故、自性離故、自性無生故。不作是念：「我有是天耳。」除為薩婆若心。如是，舍利弗！菩薩摩訶薩行般若波羅蜜時，得天耳神通智證。</td><td>這位菩薩憑藉清淨的天耳，聽力超越了一般人的耳根，能夠聽到兩種聲音：天界的聲音、人間的聲音。但菩薩並不執著這種天耳神通，因為天耳、所聽的聲音、以及自己的身形，都是不可得的，因為自性本空、自性遠離、自性無生的緣故。菩薩不會生起這樣的念頭：「我擁有這種天耳。」唯一的例外是為了成就薩婆若之心而作此念想。就是這樣，舍利弗！菩薩摩訶薩修行般若波羅蜜的時候，證得天耳神通的智慧證量。</td><td class="bh40p3-guan"><b>天耳通·能聞所聞皆不可得</b>——與上段句式結構相同，形成「證得神通—不著神通—因自性空離無生—除為薩婆若心」的固定範式，六神通逐一套用此範式，體現論典行文的結構化重複，正是要反覆刻印「能所俱空」的中觀正見於讀者心中。</td></tr><tr><td class="bh40p3-src">是菩薩如實知他眾生心：若欲心，如實知欲心；離欲心，如實知離欲心；瞋心，如實知瞋心；離瞋心，如實知離瞋心；癡心，如實知癡心；離癡心，如實知離癡心；渴愛心，如實知渴愛心；無渴愛心，如實知無渴愛心；有受心，如實知有受心；無受心，如實知無受心；攝心，如實知攝心；散心，如實知散心；小心，如實知小心；大心，如實知大心；定心，如實知定心；亂心，如實知亂心；解脫心，如實知解脫心；不解脫心，如實知不解脫心；有上心，如實知有上心；無上心，如實知無上心。亦不著是心！何以故？是心非心相不可思議故，自性空故、自性離故、自性無生故。不作是念：「我得他心智證。」除為薩婆若心。如是，舍利弗！菩薩摩訶薩行般若波羅蜜時，得他心神通智證。</td><td>這位菩薩能夠如實了知其他眾生的心念：如果是有欲望的心，就如實了知是有欲望的心；如果是遠離欲望的心，就如實了知是遠離欲望的心；瞋恚的心，如實了知是瞋恚的心；遠離瞋恚的心，如實了知是遠離瞋恚的心；愚癡的心，如實了知是愚癡的心；遠離愚癡的心，如實了知是遠離愚癡的心；渴愛的心，如實了知是渴愛的心；沒有渴愛的心，如實了知是沒有渴愛的心；有執受的心，如實了知是有執受的心；沒有執受的心，如實了知是沒有執受的心；收攝專注的心，如實了知是收攝專注的心；散亂的心，如實了知是散亂的心；狹小的心，如實了知是狹小的心；廣大的心，如實了知是廣大的心；禪定的心，如實了知是禪定的心；散亂昏亂的心，如實了知是散亂昏亂的心；解脫的心，如實了知是解脫的心；尚未解脫的心，如實了知是尚未解脫的心；有更上進步空間的心，如實了知是有上的心；已無更上進步空間的心，如實了知是無上的心。但菩薩對這些心念也毫不執著！為什麼呢？因為這心念本身「非心之相」是不可思議的，因為自性本空、自性遠離、自性無生的緣故。菩薩不會生起這樣的念頭：「我證得了他心智證。」唯一的例外是為了成就薩婆若之心而作此念想。就是這樣，舍利弗！菩薩摩訶薩修行般若波羅蜜的時候，證得他心神通的智慧證量。</td><td class="bh40p3-guan"><b>他心通·二十心相對舉</b>——經文以欲／離欲、瞋／離瞋、散／攝、小／大、定／亂、縛／解脫、有上／無上等十對二十種心相鉅細靡遺地鋪陳，展現他心通照見眾生心念的精密程度；末句「是心非心相不可思議」，點出即便如此精密的觀照，其所觀之心念本身仍是畢竟空、不可思議，能知與所知同歸空性，不因觀照精密而落入「有一實在心相可得」的執著。</td></tr><tr><td class="bh40p3-src">是菩薩以宿命智證通，念一心乃至百心，念一日乃至百日，念一月乃至百月，念一歲乃至百歲，念一劫乃至百劫、無數百劫、無數千劫、無數百千劫，乃至無數百千萬億劫世；我是處如是姓、如是名、如是生、如是食、如是久住、如是壽限、如是長壽、如是受苦樂；我是中死、生彼處，彼處死、生是處，有相有因緣。亦不著是宿命神通，宿命神通事及己身皆不可得，自性空故、自性離故、自性無生故。不作是念：「我有是宿命神通。」除為薩婆若心。</td><td>這位菩薩憑藉宿命智證通，能夠憶念一念之心乃至百念之心，憶念一日乃至百日，憶念一月乃至百月，憶念一年乃至百年，憶念一劫乃至百劫、無數百劫、無數千劫、無數百千劫，乃至無數百千萬億劫那樣長久的世代；憶起自己曾經在某處、姓什麼、名什麼、如何投生、吃什麼食物、住世多久、壽命的期限、是長壽還是短命、承受什麼樣的苦樂；憶起自己在此處死去、投生到彼處，又在彼處死去、投生到此處，這一切都是有跡可循、有因緣可考的。但菩薩並不執著這種宿命神通，因為宿命神通這件事以及自己的身形，都是不可得的，因為自性本空、自性遠離、自性無生的緣故。菩薩不會生起這樣的念頭：「我擁有這種宿命神通。」唯一的例外是為了成就薩婆若之心而作此念想。</td><td class="bh40p3-guan"><b>宿命通·時間軸上的自性空</b>——宿命通能上溯無數百千萬億劫的生死流轉，鉅細靡遺地憶念姓名、壽限、苦樂、死此生彼的因緣軌跡，卻仍歸結於「宿命神通事及己身皆不可得」；即便是橫跨無量劫的時間縱深，其所憶念的一切生滅相仍是自性空、自性離、自性無生，呼應「時間亦是假名施設」的中觀理解。</td></tr><tr><td class="bh40p3-src">是菩薩以天眼見眾生死時、生時，端政、醜陋，惡處、好處，若大、若小；知眾生隨業因緣：是諸眾生身惡業成就、口惡業成就、意惡業成就故，謗毀聖人、受邪見因緣故，身壞命終墮惡道，生地獄中；是諸眾生身善業成就、口善業成就、意善業成就，不謗毀聖人、受正見因緣故，命終入善道，生天上。亦不著是天眼神通，天眼神通事及己身皆不可得，自性空故、自性離故、自性無生故。不作是念：「我有是天眼神通。」除為薩婆若心。</td><td>這位菩薩憑藉天眼，能夠見到眾生死亡的那一刻、投生的那一刻，容貌端正還是醜陋，投生到惡處還是好處，身形是大是小；能夠了知眾生隨順業力因緣的軌跡：這些眾生因為身惡業成就、口惡業成就、意惡業成就的緣故，毀謗聖人、承受邪見的因緣，因而身壞命終之後墮入惡道，投生到地獄之中；這些眾生因為身善業成就、口善業成就、意善業成就，不毀謗聖人、承受正見的因緣，因而命終之後投生善道，往生天上。但菩薩並不執著這種天眼神通，因為天眼神通這件事以及自己的身形，都是不可得的，因為自性本空、自性遠離、自性無生的緣故。菩薩不會生起這樣的念頭：「我擁有這種天眼神通。」唯一的例外是為了成就薩婆若之心而作此念想。</td><td class="bh40p3-guan"><b>天眼通·業因緣果報如實照見</b>——天眼所見不僅是外相的生死美醜，更能透視業因緣的運作機制——身口意三業與謗毀正邪見如何招感善惡道的果報；然而如此精密的因果透視，仍須歸於「天眼神通事及己身皆不可得」的自性空觀，說明業果歷歷不爽與畢竟空性二者並不相違，此為中觀「緣起性空」的又一次具體印證。</td></tr><tr><td class="bh40p3-src">是菩薩摩訶薩漏盡神通，雖得漏盡神通，不墮聲聞、辟支佛地；乃至阿耨多羅三藐三菩提，亦不依異法。亦不著是漏盡神通，漏盡神通事及己身皆不可得，自性空故、自性離故、自性無生故。不作是念：「我得漏盡神通。」除為薩婆若心。如是，舍利弗！菩薩摩訶薩行般若波羅蜜時，得漏盡神通智證。</td><td>這位菩薩摩訶薩證得漏盡神通，雖然已經證得漏盡神通，卻不會墮入聲聞、辟支佛之地；乃至趣向阿耨多羅三藐三菩提的過程中，也不會依止其他的法門。菩薩並不執著這種漏盡神通，因為漏盡神通這件事以及自己的身形，都是不可得的，因為自性本空、自性遠離、自性無生的緣故。菩薩不會生起這樣的念頭：「我證得了漏盡神通。」唯一的例外是為了成就薩婆若之心而作此念想。就是這樣，舍利弗！菩薩摩訶薩修行般若波羅蜜的時候，證得漏盡神通的智慧證量。</td><td class="bh40p3-guan"><b>漏盡通·不墮二乘地的分水嶺</b>——六神通中唯有漏盡通特別強調「雖得漏盡神通，不墮聲聞、辟支佛地」，這是菩薩神通與二乘神通的根本分水嶺：聲聞、辟支佛證得漏盡即入涅槃、不復進趣，菩薩則以漏盡通為基礎，繼續趣向無上菩提而不依止其他法門，展現菩薩道「不住涅槃、不住生死」的中道精神。</td></tr><tr><td class="bh40p3-src">如是，舍利弗！菩薩摩訶薩行般若波羅蜜時，具足神通波羅蜜；具足神通波羅蜜已，增益阿耨多羅三藐三菩提。</td><td>就是這樣，舍利弗！菩薩摩訶薩修行般若波羅蜜的時候，具足圓滿了神通波羅蜜；具足神通波羅蜜之後，便能增益、成就阿耨多羅三藐三菩提。</td><td class="bh40p3-guan"><b>六通總結·神通波羅蜜增益菩提</b>——此句總結前六段六神通的鋪陳，點出神通波羅蜜並非目的本身，而是「增益阿耨多羅三藐三菩提」的資糧與助道法，六神通與菩提之間是助緣與目標的關係，非彼此獨立無關。</td></tr><tr><td class="bh40p3-src">問曰：是神通力乃至四禪中，此何以言「但至梵世，身得自在」？</td><td>問道：這種神通之力應當可以遍及四禪天，這裡為什麼只說「一直到梵世，身形便能得到自在」呢？</td><td class="bh40p3-guan"><b>設問·神通力遍及四禪為何獨舉梵世</b>——此問追問經文「乃至梵天，身得自在」一句的範圍界定，質疑神通力理應遍及四禪諸天，何以獨舉初禪梵世作為代表，開啟下文「以初攝後」的解釋。</td></tr><tr><td class="bh40p3-src">答曰：此先已說，梵是初門故，言「梵世」則攝一切色界。又世人皆貴梵王，以為世界主故。又是菩薩不欲於欲界散亂心現其自在，是故乃至離欲人中能有所作。</td><td>答道：這在前面已經說明過了，因為梵天是色界的初門，所以說「梵世」便已經含攝了整個色界。再者，世人都尊崇梵王，將梵王視為世界的主宰。又因為這位菩薩不願意在欲界散亂之心中顯現他的自在神通，所以才說「一直到離欲的人（梵世）之中，才能有所作為」。</td><td class="bh40p3-guan"><b>以初攝後·借代之法</b>——論主以「梵是初門，舉初攝後」解答何以獨舉梵世代表色界，並補充世人尊梵王為主、菩薩不欲於散亂欲界現自在二重理由，展現論典解經時常見的「以簡馭繁」修辭手法，並非文字疏漏，而是有意的濃縮表達。</td></tr><tr><td class="bh40p3-src">以是六神通廣利益眾生，故說：「具足得如是神通，增益阿耨多羅三藐三菩提。」</td><td>因為憑藉這六種神通能夠廣泛地利益眾生，所以經文才說：「具足證得這樣的神通，便能增益成就阿耨多羅三藐三菩提。」</td><td class="bh40p3-guan"><b>六通收攝·利生為本</b>——論主在全品之末點明六神通的終極意義在於「廣利益眾生」，呼應開篇「以無生故，能有無量生」的十字總持：神通的價值不在於自身的炫奇，而在於作為菩薩利他度生、趣向無上菩提的方便妙用，畢竟空與廣大利生行於此圓融無二。</td></tr></tbody></table><p class="bh40p3-note">本表為卷四十第3品「放光神通波羅蜜」原典部分的原文·白話·中觀三欄對照：經文詳列菩薩行般若波羅蜜時所修六神通（如意神足通、天耳通、他心通、宿命通、天眼通、漏盡通），每一神通皆依「證得—不著—自性空離無生—除為薩婆若心」的固定範式反覆申說；論主並解答何以經文獨舉「梵世」代表色界身自在的疑問，終以「六神通廣利益眾生」總收全品，十字總持為「以無生故，能有無量生」。 原文取自 dazhidulun-40 站內 L1 加密原典第3品（依實際位移順序收錄，經在最頂、問在答前、有問必有答，共10段，已去除重複段落與編者附加的英文資訊圖表式問答）。白話忠於原意、不增不減；中觀欄標出各段所涉的中觀義理。</p></div></div>
+<script id="wy-bh40p3-js">(function(){
+var CH=document.querySelectorAll("section.chapter");
+var BTN=document.getElementById("bh40p3Btn"),BOX=document.getElementById("bh40p3Box"),MODAL=document.getElementById("bh40p3Modal");
+if(!CH.length||!BTN||!BOX||!MODAL)return;
+var TARGET=2;
+var CBOX=document.getElementById("c40p3Box");
+function place(){
+  var b=null;
+  if(CBOX){var st=getComputedStyle(CBOX);var r=CBOX.getBoundingClientRect();if(st.position==="fixed"&&r.height>0&&st.display!=="none")b=Math.round(window.innerHeight-r.top)+8;}
+  if(b===null){var eb=document.querySelector(".wy-ebox");if(eb){var er=eb.getBoundingClientRect();if(er.height>4)b=Math.round(window.innerHeight-er.top)+8;}}
+  if(b===null)b=150;
+  BOX.style.bottom=b+"px"; /*BHPLACE*/
+}
+function curIdx(){var lim=window.innerHeight*0.35,idx=-1;for(var i=0;i<CH.length;i++){if(CH[i].getBoundingClientRect().top<lim)idx=i;}return idx;}
+function upd(){place();BOX.classList.toggle("show",curIdx()===TARGET);}
+var tk=false;function onS(){if(!tk){tk=true;requestAnimationFrame(function(){tk=false;upd();});}}
+window.addEventListener("scroll",onS,{passive:true});window.addEventListener("resize",onS);
+BTN.addEventListener("click",function(){MODAL.classList.add("open");});
+MODAL.addEventListener("click",function(e){if(e.target===MODAL||e.target.id==="bh40p3Close")MODAL.classList.remove("open");});
+document.addEventListener("keydown",function(e){if(e.key==="Escape")MODAL.classList.remove("open");});
+upd();var c=0,iv=setInterval(function(){upd();if(++c>40)clearInterval(iv);},250);
+})();</script>
+<!--WY-BH40P3:END-->
 </body></html>
