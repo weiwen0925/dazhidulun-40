@@ -1432,4 +1432,62 @@ document.addEventListener("keydown",function(e){if(e.key==="Escape")MODAL.classL
 upd();var c=0,iv=setInterval(function(){upd();if(++c>40)clearInterval(iv);},250);
 })();</script>
 <!--WY-BH40P3:END-->
+<!--WY-BH40P4:BEGIN-->
+<style id="wy-bh40p4-css">
+.bh40p4-fabbox{position:fixed;right:22px;bottom:150px;z-index:123;display:none;}
+.bh40p4-fabbox.show{display:block;}
+.bh40p4-btn{display:inline-flex;align-items:center;gap:9px;font-family:"Noto Sans TC",sans-serif;letter-spacing:.5px;color:#f7ecd2;background:linear-gradient(135deg,#4a5a68,#232d36);padding:8px 15px;border-radius:22px;border:1px solid rgba(150,180,205,.55);box-shadow:0 4px 16px rgba(0,0,0,.32);cursor:pointer;opacity:.96;transition:opacity .3s,transform .2s,box-shadow .2s;}
+.bh40p4-btn:hover{opacity:1;transform:translateY(-2px);box-shadow:0 6px 22px rgba(120,160,200,.5);}
+.bh40p4-ic{font-size:15px;line-height:1;color:#bcd4ea;}
+.bh40p4-ls{display:flex;flex-direction:column;align-items:flex-start;line-height:1.22;}
+.bh40p4-l1{font-size:10.5px;font-weight:500;opacity:.82;white-space:nowrap;}
+.bh40p4-l2{font-size:13px;font-weight:700;color:#eef4fa;white-space:nowrap;}
+.bh40p4-modal{position:fixed;inset:0;z-index:200;display:none;align-items:center;justify-content:center;background:rgba(22,26,30,.6);padding:16px;}
+.bh40p4-modal.open{display:flex;}
+.bh40p4-card{position:relative;background:#fbf7ee;max-width:1080px;width:100%;max-height:90vh;overflow:auto;border:1px solid #d3cdbf;border-radius:14px;padding:28px 22px 20px;box-shadow:0 18px 50px rgba(0,0,0,.4);}
+.bh40p4-card h3{margin:0 0 2px;font-family:"Noto Serif TC",serif;font-size:20px;color:#3f5160;}
+.bh40p4-card .sub{margin:0 0 12px;font-family:"Noto Sans TC",sans-serif;font-size:12.5px;color:#5b6b78;}
+.bh40p4-close{position:absolute;top:12px;right:16px;width:34px;height:34px;border:none;border-radius:50%;background:#eceef0;color:#3f5160;font-size:22px;line-height:1;cursor:pointer;z-index:2;}
+.bh40p4-close:hover{background:#dde2e6;}
+.bh40p4-tbl{width:100%;border-collapse:collapse;font-size:12.8px;margin:.2em 0 1em;}
+.bh40p4-tbl caption{font-family:"Noto Serif TC",serif;font-weight:700;color:#3f5160;font-size:14px;text-align:left;margin:.4em 0 .5em;}
+.bh40p4-tbl th,.bh40p4-tbl td{border:1px solid #d8d2c4;padding:.5em .65em;text-align:left;vertical-align:top;line-height:1.72;}
+.bh40p4-tbl thead th{background:#3f5160;color:#eef4fa;font-weight:700;position:sticky;top:0;}
+.bh40p4-tbl thead th:nth-child(1){width:32%;}.bh40p4-tbl thead th:nth-child(2){width:41%;}.bh40p4-tbl thead th:nth-child(3){width:27%;}
+.bh40p4-src{font-family:"Noto Serif TC",serif;color:#5a4636;background:#f6efe0;letter-spacing:.3px;}
+.bh40p4-guan{background:#eef2f5;color:#37505f;}
+.bh40p4-tbl tbody tr:nth-child(even) td{background:#faf6ee;}
+.bh40p4-tbl tbody tr:nth-child(even) td.bh40p4-guan{background:#e8eef2;}
+.bh40p4-tbl tr.bh40p4-qa td{background:#ece0c8 !important;}
+.bh40p4-tbl tr.bh40p4-qa td.bh40p4-guan{background:#d8e2e8 !important;}
+.bh40p4-tbl b{color:#8b2500;}
+.bh40p4-guan b{color:#2f6b5a;}
+.bh40p4-note{font-size:12px;color:#4a5560;line-height:1.95;background:#eef2f5;border-left:3px solid #7f9cb5;border-radius:0 6px 6px 0;padding:11px 14px;margin:2px 0 0;}
+.bh40p4-note b{color:#8b2500;}
+@media(max-width:900px){.bh40p4-fabbox{right:14px;}.bh40p4-tbl{font-size:11px;}.bh40p4-card{padding:22px 12px 14px;}}
+</style>
+<div class="bh40p4-fabbox" id="bh40p4Box"><button class="bh40p4-btn" id="bh40p4Btn" type="button" aria-label="開啟白話翻譯表"><span class="bh40p4-ic">譯</span><span class="bh40p4-ls"><span class="bh40p4-l1">本品 · 原文·白話·中觀</span><span class="bh40p4-l2">白話翻譯表</span></span></button></div><div class="bh40p4-modal" id="bh40p4Modal" role="dialog" aria-modal="true"><div class="bh40p4-card"><button class="bh40p4-close" id="bh40p4Close" type="button" aria-label="關閉">×</button><h3>卷四十 · 第4品 白話翻譯表（住六波羅蜜淨薩婆若道）</h3><p class="sub">《大智度論》卷四十 · 第4品 · 住六波羅蜜淨薩婆若道 · 原文↔白話↔中觀概念 逐段對照</p><table class="bh40p4-tbl"><caption>住六波羅蜜淨薩婆若道·原文｜白話翻譯｜中觀概念（共14段）</caption><thead><tr><th>原文</th><th>白話翻譯</th><th>中觀概念</th></tr></thead><tbody><tr><td class="bh40p4-src">「舍利弗！有菩薩摩訶薩行般若波羅蜜時，住檀波羅蜜，淨薩婆若道，畢竟空，不生慳心故。</td><td>「舍利弗！有菩薩摩訶薩修行般若波羅蜜的時候，安住在布施波羅蜜中，清淨薩婆若（一切智）之道，因為徹底通達畢竟空、不生起慳吝之心的緣故。</td><td class="bh40p4-guan"><b>檀度攝入畢竟空</b>——布施波羅蜜之所以能清淨一切智道，根本在於通達畢竟空故不生慳心，非僅世俗財施之量，而是以空觀為布施之體，六度中檀度為此段經文之首例。</td></tr><tr><td class="bh40p4-src">「舍利弗！有菩薩摩訶薩行般若波羅蜜時，住尸羅波羅蜜，淨薩婆若道，畢竟空，罪不罪不著故。</td><td>「舍利弗！有菩薩摩訶薩修行般若波羅蜜的時候，安住在持戒波羅蜜中，清淨薩婆若之道，因為徹底通達畢竟空、不執著於罪與非罪的緣故。</td><td class="bh40p4-guan"><b>戒度離罪相對待</b>——持戒清淨一切智道的根本，在於畢竟空中「罪」與「不罪」二相俱不可得，非僅止惡防非的世俗持守，而是超越持犯對待的空性持戒。</td></tr><tr><td class="bh40p4-src">「舍利弗！有菩薩摩訶薩行般若波羅蜜時，住羼提波羅蜜，淨薩婆若道，畢竟空，不瞋故。</td><td>「舍利弗！有菩薩摩訶薩修行般若波羅蜜的時候，安住在忍辱波羅蜜中，清淨薩婆若之道，因為徹底通達畢竟空、不生瞋恚之心的緣故。</td><td class="bh40p4-guan"><b>忍度不落瞋念</b>——忍辱之所以能清淨一切智道，在於畢竟空故無有可瞋之相，非強忍逆境，而是照見能瞋所瞋皆不可得。</td></tr><tr><td class="bh40p4-src">「舍利弗！有菩薩摩訶薩行般若波羅蜜時，住毘梨耶波羅蜜，淨薩婆若道，畢竟空，身心精進不懈息故。</td><td>「舍利弗！有菩薩摩訶薩修行般若波羅蜜的時候，安住在精進波羅蜜中，清淨薩婆若之道，因為徹底通達畢竟空、身心精進而不懈怠鬆懈的緣故。</td><td class="bh40p4-guan"><b>進度身心不懈</b>——精進波羅蜜清淨一切智道，在於雖觀畢竟空而不墮頑空懈怠，身心雙運、空有不二，正是「即空而不廢行」的典範。</td></tr><tr><td class="bh40p4-src">「舍利弗！有菩薩摩訶薩行般若波羅蜜時，住禪波羅蜜，淨薩婆若道，畢竟空，不亂不味故。</td><td>「舍利弗！有菩薩摩訶薩修行般若波羅蜜的時候，安住在禪定波羅蜜中，清淨薩婆若之道，因為徹底通達畢竟空、心不散亂也不耽著禪味的緣故。</td><td class="bh40p4-guan"><b>禪度不亂不味</b>——禪定波羅蜜清淨一切智道，關鍵在「不亂不味」四字：不亂則異於凡夫散心，不味則異於耽著禪悅之二乘，畢竟空慧令禪定既不散亂又不執取禪味。</td></tr><tr><td class="bh40p4-src">「舍利弗！有菩薩摩訶薩行般若波羅蜜時，住般若波羅蜜，淨薩婆若道，畢竟空，不生癡心故。</td><td>「舍利弗！有菩薩摩訶薩修行般若波羅蜜的時候，安住在般若波羅蜜中，清淨薩婆若之道，因為徹底通達畢竟空、不生起愚癡之心的緣故。</td><td class="bh40p4-guan"><b>慧度自淨其智</b>——般若波羅蜜清淨一切智道，是以般若通達般若自身之畢竟空，不生癡心，這是六度中最終、也是貫串前五度的根本，六段經文至此收束為一。</td></tr><tr><td class="bh40p4-src">「如是，舍利弗！菩薩摩訶薩行般若波羅蜜時，住六波羅蜜，淨薩婆若道，畢竟空故，不來不去故，不施不受故，非戒非犯故，非忍非瞋故，不進不怠故，不定不亂故，不智不愚故。」</td><td>「就是這樣，舍利弗！菩薩摩訶薩修行般若波羅蜜的時候，安住在六波羅蜜中，清淨薩婆若之道，因為畢竟空的緣故：不來也不去，不施也不受，非持戒也非犯戒，非忍辱也非瞋恚，不精進也不懈怠，不入定也不散亂，不是智慧也不是愚癡。」</td><td class="bh40p4-guan"><b>六度雙非·總收六段</b>——此段以「如是」總收前六段，將六度逐一化為「雙非」：施受、戒犯、忍瞋、進怠、定亂、智愚，六組對待相皆於畢竟空中泯然雙遣，正是中觀「不著二邊」在六度行門上的具體展開。</td></tr><tr><td class="bh40p4-src">「爾時，菩薩摩訶薩不分別布施不布施、持戒犯戒、忍辱瞋恚、精進懈怠、定心亂心、智慧愚癡，不分別毀害、輕慢、恭敬。何以故？舍利弗！無生法中，無有受毀者、無有受害者、無有受輕慢恭敬者。」</td><td>「這時，菩薩摩訶薩不分別布施與不布施、持戒與犯戒、忍辱與瞋恚、精進與懈怠、定心與亂心、智慧與愚癡，也不分別受到毀辱、輕慢或恭敬。這是什麼緣故呢？舍利弗！因為在無生之法中，沒有承受毀辱的人、沒有承受傷害的人，也沒有承受輕慢或恭敬的人。」</td><td class="bh40p4-guan"><b>無生法中無受者</b>——由「雙非」進一步推展至「不分別」，不僅六度自身無對待相，連他人加諸己身的毀害輕慢恭敬等外緣境相也不分別，其根據即在「無生法」中無有能受之主體可得，此為下文「金剛不動」之理論根基。</td></tr><tr><td class="bh40p4-src">「舍利弗！菩薩摩訶薩行般若波羅蜜，得如是諸功德，聲聞、辟支佛所無有。得是功德具足，成就眾生，淨佛世界，得一切種智！」</td><td>「舍利弗！菩薩摩訶薩修行般若波羅蜜，證得像這樣的種種功德，是聲聞、辟支佛所沒有的。具足了這些功德之後，便能成就眾生、清淨佛的世界，證得一切種智！」</td><td class="bh40p4-guan"><b>三淨果地·經文總結</b>——經文以「成就眾生、淨佛世界、得一切種智」三果總收全段，並特別點出此等功德為二乘所無，顯示菩薩畢竟空觀不僅自利，更能開展利他妙用，為下文論主釋義立下經證依據。</td></tr><tr><td class="bh40p4-src">釋曰：是菩薩初發意，行般若波羅蜜，漸行餘功德，所謂檀波羅蜜等。菩薩住檀波羅蜜，修治薩婆若道，觀一切法畢竟空、不生慳貪心，以是二事故，開薩婆若道。</td><td>論主解釋說：這位菩薩從初發心開始，修行般若波羅蜜，再逐漸修習其餘的功德，也就是布施波羅蜜等六度。菩薩安住在布施波羅蜜中，修治薩婆若（一切智）之道，是靠觀照一切法畢竟空、以及不生起慳貪之心這兩件事，才能開展出薩婆若之道。</td><td class="bh40p4-guan"><b>漸行次第·二事並行</b>——論主點出「漸行」的修學次第：初發意菩薩先行般若，再漸次開展其餘功德；而「開薩婆若道」須靠「住檀（行善）」與「觀畢竟空（不生慳貪）」二事並行，行善與空觀缺一不可，預示了六度與空觀不二的中道結構。</td></tr><tr><td class="bh40p4-src">所以者何？畢竟空中，無有慳貪；慳貪根本斷故，具足檀波羅蜜；具足檀波羅蜜故，莊嚴般若波羅蜜；乃至般若波羅蜜畢竟空故，常不生癡心。所以者何？此中佛自說：「一切法不來不去，無施無受故，乃至不智不愚故。」</td><td>為什麼這麼說呢？因為在畢竟空之中，本來就沒有慳貪可得；慳貪的根本既已斷除，便能具足布施波羅蜜；具足布施波羅蜜的緣故，能夠莊嚴般若波羅蜜；乃至般若波羅蜜本身也是畢竟空的緣故，所以能常常不生起愚癡之心。為什麼這麼說呢？這裡佛陀親自說明：「一切法不來也不去，沒有布施也沒有領受的緣故，乃至不是智慧也不是愚癡的緣故。」</td><td class="bh40p4-guan"><b>畢竟空→斷慳→具檀→莊嚴般若</b>——論主在此給出一條因果鏈：畢竟空故慳貪根本斷，根本斷故檀度具足，檀度具足故莊嚴般若，般若畢竟空故不生癡心；「根本斷」三字最關鍵——不是壓抑煩惱，而是於空性中照見其本無，六度由此輾轉相資、最終會歸般若。</td></tr><tr class="bh40p4-qa"><td class="bh40p4-src">問曰：若能如是觀，行六波羅蜜，得何等利益？</td><td>問道：如果能夠這樣觀照，修行六波羅蜜，能夠得到什麼樣的利益呢？</td><td class="bh40p4-guan"><b>設問·六度觀行何益</b>——此問承接上文畢竟空觀六度的義理，追問如此修行的具體利益所在，開啟下文「不念有施、不念無施」雙離之教的解說。</td></tr><tr class="bh40p4-qa"><td class="bh40p4-src">答曰：此中佛自說：此菩薩不念有所施與、無所施與。若念有施，入虛妄法中，又著布施，心生憍慢。若念無所施，即墮邪見中。是布施論議，是佛法中初門，云何言無？乃至不念有癡、有慧。</td><td>答道：這裡佛陀親自說明：這位菩薩既不執念「有所施與」，也不執念「無所施與」。如果執念有布施這件事，便落入虛妄之法中，而且會執著布施之相，心中生起憍慢；如果執念沒有布施這件事，便墮入邪見之中。布施的論議，本是佛法中的入門法要，怎麼可以說沒有呢？乃至於也不執念有愚癡、有智慧可得。</td><td class="bh40p4-guan"><b>雙離·不念有施無施</b>——論主在此確立「雙離」的中道原則：不念有施（否則入虛妄、生憍慢），不念無施（否則墮邪見、撥無因果）；布施論議是佛法初門，不可斷滅地說無，這正是中觀「不著有無兩邊」在布施行上的具體展開，六度乃至愚癡、智慧亦復如是。</td></tr><tr><td class="bh40p4-src">是人如金剛山，四面風起，不能令動。是菩薩爾時若有罵詈、讚歎，心無有異。何以故？此中佛自說：「無生法中無有罵者、無有害者、無恭敬者。」聲聞、辟支佛，有加害者，不能深有慈悲心，若默然、若遠離。菩薩則不然，能深加慈心，愛之如子，方便度之，是故勝一切聲聞、辟支佛，而能教化一切眾生，忍辱、慈悲、方便深故，隨願清淨業因緣故，能淨佛世界。是法具足故，不久當得一切種智。</td><td>這樣的人就像金剛山一樣，四面八方的狂風吹來，也不能使它動搖。這位菩薩這時候即使遭受辱罵、或受到讚歎，心中都不會有絲毫差別。這是什麼緣故呢？這裡佛陀親自說明：「在無生之法中，沒有辱罵的人、沒有加害的人，也沒有恭敬的人。」聲聞、辟支佛遇到加害自己的人，因為不能生起深切的慈悲心，只能選擇默然忍受、或是遠離躲避。菩薩則不是這樣，能夠深深生起慈心，把加害者當成自己的孩子一樣愛護，用種種方便來度化他，所以勝過一切聲聞、辟支佛，並且能夠教化一切眾生；由於忍辱、慈悲、方便都深廣的緣故，能隨順本願清淨的業因緣，因而能夠清淨佛的世界。這樣的法具足圓滿之後，不久便能證得一切種智。</td><td class="bh40p4-guan"><b>金剛不動·愛敵如子</b>——此段是全品後半的總綱：「金剛山喻」顯示能所雙亡故不動；「二乘默然遠離」與「菩薩愛之如子」對比顯出悲智雙運的殊勝；末句「淨佛世界、得一切種智」則收束全品因果，正是畢竟空與大悲方便交融無礙的具體寫照。</td></tr></tbody></table><p class="bh40p4-note">本表為卷四十第4品「住六波羅蜜淨薩婆若道」原典部分的原文·白話·中觀三欄對照：經文先以六段句式列舉菩薩行六波羅蜜時各各安住畢竟空、清淨薩婆若道之相，再以「雙非」總收六度對待相、以「無生法中無受者」推展至不分別毀譽；論主逐段釋義漸行次第、畢竟空斷慳具檀莊嚴般若之因果鏈，並以一番問答闡明「不念有施、不念無施」之雙離中道，終以「金剛山喻」「愛敵如子」總攝菩薩悲智雙運、能所雙亡之義。原文取自 dazhidulun-40 站內 L1 加密原典第4品（依實際位移順序收錄，經在最頂、問在答前、有問必有答，共14段，已去除重複段落）。白話忠於原意、不增不減；中觀欄標出各段所涉的中觀義理。</p></div></div>
+<script id="wy-bh40p4-js">(function(){
+var CH=document.querySelectorAll("section.chapter");
+var BTN=document.getElementById("bh40p4Btn"),BOX=document.getElementById("bh40p4Box"),MODAL=document.getElementById("bh40p4Modal");
+if(!CH.length||!BTN||!BOX||!MODAL)return;
+var TARGET=3;
+var CBOX=document.getElementById("c40p4Box");
+function place(){
+  var b=null;
+  if(CBOX){var st=getComputedStyle(CBOX);var r=CBOX.getBoundingClientRect();if(st.position==="fixed"&&r.height>0&&st.display!=="none")b=Math.round(window.innerHeight-r.top)+8;}
+  if(b===null){var eb=document.querySelector(".wy-ebox");if(eb){var er=eb.getBoundingClientRect();if(er.height>4)b=Math.round(window.innerHeight-er.top)+8;}}
+  if(b===null)b=150;
+  BOX.style.bottom=b+"px"; /*BHPLACE*/
+}
+function curIdx(){var lim=window.innerHeight*0.35,idx=-1;for(var i=0;i<CH.length;i++){if(CH[i].getBoundingClientRect().top<lim)idx=i;}return idx;}
+function upd(){place();BOX.classList.toggle("show",curIdx()===TARGET);}
+var tk=false;function onS(){if(!tk){tk=true;requestAnimationFrame(function(){tk=false;upd();});}}
+window.addEventListener("scroll",onS,{passive:true});window.addEventListener("resize",onS);
+BTN.addEventListener("click",function(){MODAL.classList.add("open");});
+MODAL.addEventListener("click",function(e){if(e.target===MODAL||e.target.id==="bh40p4Close")MODAL.classList.remove("open");});
+document.addEventListener("keydown",function(e){if(e.key==="Escape")MODAL.classList.remove("open");});
+upd();var c=0,iv=setInterval(function(){upd();if(++c>40)clearInterval(iv);},250);
+})();</script>
+<!--WY-BH40P4:END-->
 </body></html>
